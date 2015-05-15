@@ -20,11 +20,12 @@
       margin-right: auto;
       margin-left: auto;
      }
-	.container{
-		
+	.thumbnail{
+		margin-bottom: 0px;
 	}
 		body {
 			background-color: rgba(92, 217, 44, 0.5);
+			height: 590px;
 			overflow-y:hidden;
 		     }
 		
@@ -72,21 +73,21 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+        <li class=""><a href="#">Home<span class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+        <li class=""><a href="#">Engineer<span class="pull-right hidden-xs showopacity glyphicon glyphicon-import"></span></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Edit Parts<span class="caret"></span><span class="pull-right hidden-xs showopacity glyphicon glyphicon-pencil"></span></a>
           <ul class="dropdown-menu forAnimate" role="menu">
-            <li><a href="{{URL::to('createusuario')}}">Crear</a></li>
-            <li><a href="#">Modificar</a></li>
-            <li><a href="#">Reportar</a></li>
+            <li><a href="#">Cutting</a></li>
+            <li><a href="#">Fitting</a></li>
+            <li><a href="#">Welding</a></li>
+            <li><a href="#">Painting</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Informes</a></li>
+            <li><a href="#">Link</a></li>
           </ul>
         </li>          
-        <li ><a href="#">Libros<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
-        <li ><a href="#">Tags<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a></li>
+        <li ><a href="#">PCC<span class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a></li>        
+        <li ><a href="#">Admin<span class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
       </ul>
     </div>
   </div>
@@ -98,7 +99,7 @@
 		<div class="container-fluid thumbnail">
 			<!--------------------------Ifreme Here--------------------------------------------------------->
 			<div class="col-sm-11 col-lg-10">
-				<iframe  width="100%" height="600px" style="margin: 0px;"  src="cut_edit.html"></iframe>
+				<iframe  width="100%" height="583px" style="margin: 0px;"  src="cut_edit.html"></iframe>
 			</div>
 			<!--------------------------Ifreme Here--------------------------------------------------------->
 		</div>
