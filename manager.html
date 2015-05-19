@@ -39,22 +39,10 @@
 		
 	<div id="wrapper" class="container">
 		<h4 align="center">Manager</h4>
-		<div class="thumbnail"><br />
-		<form class="col-lg-offset-2 form-inline" method="post" action="#">
-			
-			<div class="col-lg-4 col-md-4 form-inline">
-			<label>ชื่องาน </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
-			</div>
-			<div class="col-lg-4 col-md-4 form-inline">
-			<label>ประเภท </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
-			</div>
-			<div class="form-inline"><p class="hidden-lg"><br /></p>
-					<input class="btn btn-info" type="submit" value="Search" />
-			</div>
-		</form><br />
-			<div class="container">
+		<div class="thumbnail">
+			<!--Overview-->
+		<h4 align="center">Overview</h4>
+
 	<div class="row"><br />
 		<div class="col-md-11">
     	<div class="progress">
@@ -62,15 +50,10 @@
   			<div class="progress-bar" style="width: 10%;"></div>
 		</div>
         <hr />
-		<div class="progress">
-        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-  			<div class="progress-bar progress-bar-success" style="width: 100%"></div>
-		</div>
-        <hr />
 	</div>
 	</div>
-</div>
-	<form action="cut_edit.html">
+
+	<form action="">
 		<div class="table-responsive">
 		<table class="table table-hover table-bordered">
 			<tr>
@@ -85,14 +68,45 @@
 				<td>dd</td>
 				<td>42%</td>
 			</tr>
-					
-			
-			
+			</table>
+		</div>
+	</form><!--end Overview-->
+	
+	<!--Cutting Department-->
+	
+	<h4 align="center">Cutting Department</h4>
+	<div class="row"><br />
+		<div class="col-md-11">
+		<div class="progress">
+        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
+  			<div name="progcut" class="progress-bar progress-bar-success" style="width: 100%"></div>
+		</div>
+        <hr />
+		</div>
+		</div>
+
+	<form action="">
+		<div class="table-responsive">
+		<table class="table table-hover table-bordered">
+			<tr>
+				<th class="text-center">Project Name</th>
+				<th class="text-center">Process</th>
+			</tr>
+			<tr>
+				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
+				<td>20%</td>
+			</tr>
+			<tr>
+				<td>dd</td>
+				<td>42%</td>
+			</tr>
+
 			</table>
 		</div>
 				
 		
-	</form>
+	</form>	<!--end Cutting Department-->
+	
 	</div>
 	</div>
 	<script src="js/bootstrap.js"></script>

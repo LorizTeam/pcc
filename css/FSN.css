@@ -132,7 +132,8 @@ html { height: 100%;}
 
 .sidebar-nav li a {
     display: block;
-    color: #ddd;
+    color: #fff;
+    
     text-decoration: none;
     padding: 10px 15px 10px 30px;    
 }
