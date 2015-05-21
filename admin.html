@@ -35,50 +35,117 @@
 	</style>
 </head>
 <body>
-		
-	<div id="wrapper" class="container">
-		<h4 align="center"></h4>
-		<div class="thumbnail"><br />
-		<form class="col-lg-offset-2 form-inline" method="post" action="#">
-			
-			<div class="col-lg-4 col-md-4 form-inline">
-			<label>ชื่องาน </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
+	<div class="container">
+		<center><h3>Manager User</h3></center>
+		<div class="thumbnail">
+			<br />
+			<div class="row">
+				<form class="form-inline" role="form">
+				<div class="col-md-2"></div>
+				<div class="form-group col-md-8">
+					<label>Username :</label>
+					<input type="text" class="form-control" id="username">
+					<label>Department :</label>
+					<input type="text" class="form-control" id="department">
+					<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</a>
+				</div>
+				<div class="col-md-2">
+					<a href="register.html" class="btn btn-warning">Create User</a>
+				</div>
+				</form>
 			</div>
-			<div class="col-lg-4 form-inline">
-			<label>ประเภท </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
+			<br />
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered table-hover table-striped">
+					    <thead>
+					    	<tr>
+					        	<th>Username</th>
+					        	<th>Firstname</th>
+					        	<th>Lastname</th>
+					        	<th>Department</th>
+					      	</tr>
+					    </thead>
+					    <tbody>
+					    	<tr>
+						    	<td>50001</td>
+						    	<td>จำเนียร</td>
+						    	<td>อัศวเรืองชัย</td>
+						    	<td>Engineer</td>
+					    	</tr>
+					      	<tr>
+					        	<td>51010</td>
+					        	<td>บรรยงค์</td>
+					        	<td>สุวรรณผ่อง</td>
+					        	<td>Paint</td>
+					      	</tr>
+					      	<tr>
+					        	<td>51005</td>
+					        	<td>ขวัญเรือน</td>
+					        	<td>กิติวัฒน์</td>
+					        	<td>Fit</td>
+					      	</tr>
+					      	<tr>
+						    	<td>53035</td>
+						    	<td>จุมพล</td>
+						    	<td>รอดคำดี</td>
+						    	<td>Engineer</td>
+					    	</tr>
+					      	<tr>
+					        	<td>55001</td>
+					        	<td>เสาวภาคย์</td>
+					        	<td>ชีวะปรีชา</td>
+					        	<td>Cutting</td>
+					      	</tr>
+					      	<tr>
+					        	<td>55004</td>
+					        	<td>เฉลิม</td>
+					        	<td>วัชรถานนท์</td>
+					        	<td>Fit</td>
+					      	</tr>
+					      	<tr>
+						    	<td>55020</td>
+						    	<td>ธีราพร</td>
+						    	<td>วิรุฬห์รักษ์</td>
+						    	<td>Engineer</td>
+					    	</tr>
+					      	<tr>
+					        	<td>55040</td>
+					        	<td>นิตยา</td>
+					        	<td>พัฒน์ชนะ</td>
+					        	<td>Cutting</td>
+					      	</tr>
+					      	<tr>
+					        	<td>55099</td>
+					        	<td>อุรพันธ์</td>
+					        	<td>อนุวุฒินาวิน</td>
+					        	<td>Weld</td>
+					      	</tr>
+					      	<tr>
+						    	<td>56001</td>
+						    	<td>เทพชัย</td>
+						    	<td>วิโนทัย</td>
+						    	<td>Engineer</td>
+					    	</tr>
+					      	<tr>
+					        	<td>56002</td>
+					        	<td>ธรรมนูญ</td>
+					        	<td>สงวนดิสกุล</td>
+					        	<td>Cutting</td>
+					      	</tr>
+					      	<tr>
+					        	<td>57001</td>
+					        	<td>ยงยุทธ</td>
+					        	<td>เนียมสอิ้ง</td>
+					        	<td>Cutting</td>
+					      	</tr>
+					    </tbody>
+					</table>
+				</div>
 			</div>
-			<div class="form-inline"><p class="hidden-lg"><br /></p>
-					<input class="btn btn-info" type="submit" value="Search" />
-			</div>
-		</form><br />
-	
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="" target="">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
-					
-			
-			
-			</table>
 		</div>
-				
-		
-	</form>
-	</div>
-	</div>
+	</div>	
+	
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/npm.js"></script>
