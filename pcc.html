@@ -3,8 +3,6 @@
 <head>
 
 <title>Project Cost Control</title>
-<script src="js/html5shiv.js"></script>
-<script src="js/html5shiv-printshiv.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
 
@@ -74,18 +72,18 @@
 				<th class="text-center">Process</th>
 			</tr>
 			<tr>
-				<td><a href="" target="iframe">Project 1</a></td>
-				<td>20%</td>
-				<td>dd</td>
-				<td>42%</td>
+				<td><a href="pcc_upload.html" target="iframe">BTS Green Line</a><span id="iconup" class="glyphicon glyphicon-paperclip hidden"></span></td>
+				<td>2016-01-25</td>
+				<td>2018-12-20</td>
+				<td>จำเนียร</td>
 				<td>42%</td>
 			</tr>
 			<tr>
-				<td>dd</td>
-				<td>42%</td>
-				<td>dd</td>
-				<td>42%</td>
-				<td>42%</td>
+				<td>Home Stay @ Hua Hin</td>
+				<td>2015-05-22</td>
+				<td>2015-12-24</td>
+				<td>จุมพล</td>
+				<td>10%</td>
 			</tr>
 					
 			
@@ -97,6 +95,16 @@
 	</form>
 	</div>
 	</div>
+	<script>
+$(document).ready(function(){
+    $("#iconup").show(function(){
+        $(this).hide();
+    });
+    $("#show").click(function(){
+        $("#iconup").show();
+    });
+});
+</script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/npm.js"></script>
