@@ -33,63 +33,177 @@
 	</style>
 </head>
 <body>
-		
-	<div id="wrapper" class="container">
-		<h4 align="center">Project Cost Control</h4>
-		<h6 align="center" style="color: grey;">ระบบควบคุมต้นทุน</h6>		
-		<div class="thumbnail"><br />
-		<div class="row-fluid">
-		<form class="col-lg-offset-2 form-inline" method="post" action="#">
-			
-			<div class="col-lg-10 form-group">
-			<input class="" type="radio" name="nameproj"  />
-			<label>ชื่องาน </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
-			<input class="" type="radio" name="nameproj"  />
-			<label>ประเภท </label>
-			<input class="form-control" name="username" type="text" placeholder="" />
-			<input class="btn btn-primary" type="submit" value="Search" />
+	<div class="container">
+		<center><h3>Select Project</h3></center>		
+		<div class="thumbnail">
+			<br />
+			<form class="col-lg-offset-2 form-inline" method="post" action="#">
+				<div class="col-lg-10 form-group">
+					<label>ชื่องาน </label>
+					<input class="form-control" name="username" type="text" placeholder="" />
+					<label>ประเภท </label>
+					<input class="form-control" name="username" type="text" placeholder="" />
+					<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</a>
+				</div>
+			</form>
+				<div>
+					<a href="pcc_add.html" class="btn btn-primary">Create New Project</a>
+				</div>
+			<div>
+				<div><br/></div>
+				<table class="table table-hover table-bordered table-striped">
+					<thead>
+					    	<tr>
+					        	<th>Project Name</th>
+					        	<th>Project Type</th>
+					        	<th>Date Start</th>
+					        	<th>Date End</th>
+					        	<th>Manager</th>
+					        	<th>Process</th>
+					      	</tr>
+					</thead>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">BTS Green Line</a><span id="iconup" class="glyphicon glyphicon-paperclip hidden"></span></td>
+						<td>Train</td>
+						<td>2006-01-25</td>
+						<td>2010-12-20</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Stay @ Hua Hin</a></td>
+						<td>Home</td>
+						<td>2014-05-22</td>
+						<td>2015-05-01</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">อาคาร ยิมเนเซียมสำหรับเอเชียนเกมส์ ครั้งที่ 13</a></td>
+						<td>Building</td>
+						<td>2001-05-22</td>
+						<td>2003-12-24</td>
+						<td>บรรยงค์</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">โครงสร้างเหล็กสำหรับบอยเลอร์ขนาด2x700 เมกะวัตต์ ของโรงไฟฟ้าราชบุรี</a></td>
+						<td>Factory</td>
+						<td>1998-05-22</td>
+						<td>2003-12-24</td>
+						<td>บรรยงค์</td>
+						<td>100%</td>
+					</tr><tr>
+						<td><a href="pcc_upload.html" target="iframe">งานโครงสร้างเหล็กของสถานีรถไฟฟ้าบีทีเอส</a></td>
+						<td>Train</td>
+						<td>1995-05-22</td>
+						<td>2000-12-24</td>
+						<td>เฉลิม</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">งานโครงสร้างเหล็กโรงงานเหล็กรีดเย็นของไทยน๊อกซ์สตีล ระยะที่ 2</a></td>
+						<td>Factory</td>
+						<td>1998-05-22</td>
+						<td>2011-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">โรงงานสระบุรีซีเมนต์</a></td>
+						<td>Factory</td>
+						<td>2011-05-22</td>
+						<td>2015-12-24</td>
+						<td>เฉลิม</td>
+						<td>70%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">งานโครงสร้างเหล็กโรงไฟฟ้าแม่เมาะ หน่วยที่ 12-13</a></td>
+						<td>Factory</td>
+						<td>2001-05-22</td>
+						<td>2005-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">เอ็มไพร์ ทาวเวอร์ </a></td>
+						<td>Building</td>
+						<td>2003-05-22</td>
+						<td>2007-12-24</td>
+						<td>เฉลิม</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">งานโครงสร้างเหล็กสำหรับทางขึ้นลงทางด่วน </a></td>
+						<td>Road</td>
+						<td>2015-05-22</td>
+						<td>2017-12-24</td>
+						<td>จุมพล</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">งานโครงสร้าเหล็กสนามกีฬาเอเชียนเกมส์</a></td>
+						<td>Building</td>
+						<td>1991-05-22</td>
+						<td>1992-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Bangkok Mass Transit System Extension Project (Sukhumvit Line Section 1)</a></td>
+						<td>Train</td>
+						<td>1991-05-22</td>
+						<td>1994-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">สะพานพระรามเก้า</a></td>
+						<td>Bridge</td>
+						<td>1985-05-22</td>
+						<td>1989-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Fabrication Steel Structure for PTT Phenol Plant</a></td>
+						<td>Building</td>
+						<td>2015-05-22</td>
+						<td>2015-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Bangkok Government Complex (Chaengwattana)</a></td>
+						<td>Building</td>
+						<td>2013-05-22</td>
+						<td>2015-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Suvarnabhumi (Second Bangkok) International Airport Project </a></td>
+						<td>Building</td>
+						<td>2012-05-22</td>
+						<td>2014-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="pcc_upload.html" target="iframe">Delhi Metro, Contract BC</a></td>
+						<td>Train</td>
+						<td>2006-05-5</td>
+						<td>2009-06-5</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+				</table>
 			</div>
-		</form>
-		<form class="form-group" method="post" action="pcc_add.html">
-			<input class="btn btn-primary" type="submit" value="Create New Project" />
-		</form>
-		</div>	<br />
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Date Start</th>
-				<th class="text-center">Date End</th>
-				<th class="text-center">Admin</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="pcc_upload.html" target="iframe">BTS Green Line</a><span id="iconup" class="glyphicon glyphicon-paperclip hidden"></span></td>
-				<td>2016-01-25</td>
-				<td>2018-12-20</td>
-				<td>จำเนียร</td>
-				<td>42%</td>
-			</tr>
-			<tr>
-				<td>Home Stay @ Hua Hin</td>
-				<td>2015-05-22</td>
-				<td>2015-12-24</td>
-				<td>จุมพล</td>
-				<td>10%</td>
-			</tr>
-					
-			
-			
-			</table>
 		</div>
-				
-		
-	</form>
-	</div>
-	</div>
-	<script>
+	</div>	
+	
+
+<script>
 $(document).ready(function(){
     $("#iconup").show(function(){
         $(this).hide();
