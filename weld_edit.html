@@ -36,14 +36,20 @@
 <body>
 		
 	<div id="wrapper" class="container">
-		<h4 align="center">Update Status for Welding</h4>
-		<h6 align="center" style="color: grey;">อัพเดทสถานะของชิ้นส่วนต่างๆ ที่นี่</h6>
+		<h1 align="center">Welding</h1>
+		<h6 align="center" style="color: grey;">Update Status</h6>
 		<div class="thumbnail"><br />
-		<form class="col-lg-offset-2 form-inline" method="post" action="#">
-				<div class="col-lg-10 form-group">
-					<label>Part mk no.</label>
+		<form class="col-lg-offset-3 form-inline" method="post" action="#">
+				<div class="form-group">
+					<label>&nbsp; &nbsp; &nbsp; item ID </label>
+					<input class="form-control" name="itemid" type="text" placeholder="" />
+					<label>Part mk no </label>
 					<input class="form-control" name="partmkno" type="text" placeholder="" />
-					<label>Profile </label>
+				</div><br /><br />
+				<div class="form-group">
+					<label class="text-right">Ass mk no </label>
+					<input class="form-control" name="assmkno" type="text" placeholder="" />
+					<label>&nbsp; &nbsp; &nbsp; &nbsp;Profile </label>
 					<input class="form-control" name="profile" type="text" placeholder="" />
 					<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</a>
 				</div>
@@ -56,6 +62,7 @@
 		<table class="table table-responsive table-hover table-bordered">
 			<tr>
 				<th class="text-center">Status</th>
+				<th class="text-center">item ID</th>
 				<th class="text-center">Part mk no.</th>
 				<th class="text-center">Ass mk no.</th>
 				<th class="text-center">Profile</th>
@@ -71,6 +78,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>101</td>
 				<td>B32</td>
 				<td>33B-6</td>
 				<td>WF-500X200X10X16</td>
@@ -86,6 +94,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>102</td>
 				<td>B32</td>
 				<td>RF-13</td>
 				<td>WF-500X200X10X16</td>
@@ -101,6 +110,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>103</td>
 				<td>B32</td>
 				<td>RF-21</td>
 				<td>WF-582X300X12X17</td>
@@ -116,6 +126,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>104</td>
 				<td>B71</td>
 				<td>37-19</td>
 				<td>WF-582X300X12X17</td>
@@ -131,6 +142,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>105</td>
 				<td>B76</td>
 				<td>36-4</td>
 				<td>WF-582X300X12X17</td>
@@ -146,6 +158,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>106</td>
 				<td>B86</td>
 				<td>35-21</td>
 				<td>WF-582X300X12X17</td>
@@ -161,6 +174,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>107</td>
 				<td>B165</td>
 				<td>36-43</td>
 				<td>WF-414X405X18X28</td>
@@ -176,6 +190,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>108</td>
 				<td>B165</td>
 				<td>P1</td>
 				<td>WF-414X405X18X28</td>
@@ -192,6 +207,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>109</td>
 				<td>B175</td>
 				<td>33VB-2</td>
 				<td>WF-414X405X18X28</td>
@@ -208,6 +224,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>110</td>
 				<td>B183</td>
 				<td>33B-12</td>
 				<td>WF-500X200X10X16</td>
@@ -224,6 +241,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>111</td>
 				<td>B198</td>
 				<td>RF-35</td>
 				<td>WF-800X300X14X26</td>
@@ -240,6 +258,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>112</td>
 				<td>B203</td>
 				<td>35-60</td>
 				<td>WF-500X200X10X16</td>
@@ -256,6 +275,7 @@
 				<td class="text-center">
 					<input type="checkbox">
 				</td>
+				<td>113</td>
 				<td>B213</td>
 				<td>35-44</td>
 				<td>BU7-900X300X30X40</td>
@@ -278,6 +298,8 @@
 	</form>
 	</div>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow52.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/dropdown.js"></script>
