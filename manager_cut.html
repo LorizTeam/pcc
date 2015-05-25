@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Project Cost Control</title>
+<script src="js/html5shiv.js"></script>
+<script src="js/html5shiv-printshiv.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"
+	charset="UTF-8">
+	<style>
+	#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+     }
+	.container {
+		margin-top: 3%;
+		
+	 }
+	
+	
+	*{
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+		body {
+			background-color: #FFFFFF;
+		     }
+		
+	</style>
+</head>
+<body>
+		
+	<div id="wrapper" class="container">
+		<h4 align="center">Update Status for Cutting</h4>
+		<h6 align="center" style="color: grey;">อัพเดทสถานะของชิ้นส่วนต่างๆ ที่นี่</h6>
+		<div class="thumbnail"><br />
+		<form class="col-lg-offset-2 form-inline" method="post" action="#">
+				<div class="col-lg-10 form-group">
+					<label>Part mk no.</label>
+					<input class="form-control" name="partmkno" type="text" placeholder="" />
+					<label>Profile </label>
+					<input class="form-control" name="profile" type="text" placeholder="" />
+					<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</a>
+				</div>
+			</form>
+			<br /><br />
+			<br />
+	
+	<form action="manager_preview.html">
+		<div class="table-responsive">
+		<table class="table table-responsive table-hover table-bordered">
+			<tr>
+				<th class="text-center">Status</th>
+				<th class="text-center">Part mk no.</th>
+				<th class="text-center">Ass mk no.</th>
+				<th class="text-center">Profile</th>
+				<th class="text-center">QTY</th>
+				<th class="text-center">Material</th>
+				<th class="text-center">Length(mm)</th>
+				<th class="text-center">Surf area(m2)</th>
+				<th class="text-center">Kg/m</th>
+				<th class="text-center">Unit Weight(Kg)</th>
+				<th class="text-center">Weight(Kg)</th>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B32</td>
+				<td>33B-6</td>
+				<td>WF-500X200X10X16</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>11157</td>
+				<td>19.53</td>
+				<td>89.6</td>
+				<td>1000.24</td>
+				<td>1000.24</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B32</td>
+				<td>RF-13</td>
+				<td>WF-500X200X10X16</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>11473</td>
+				<td>20.08</td>
+				<td>89.6</td>
+				<td>1028.52</td>
+				<td>1028.52</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B32</td>
+				<td>RF-21</td>
+				<td>WF-582X300X12X17</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>2300</td>
+				<td>5.27</td>
+				<td>137.0</td>
+				<td>315.06</td>
+				<td>315.06</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B71</td>
+				<td>37-19</td>
+				<td>WF-582X300X12X17</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>7980</td>
+				<td>18.27</td>
+				<td>137.0</td>
+				<td>1093.12</td>
+				<td>1093.12</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B76</td>
+				<td>36-4</td>
+				<td>WF-582X300X12X17</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>2480</td>
+				<td>5.68</td>
+				<td>137.0</td>
+				<td>339.72</td>
+				<td>339.72</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B86</td>
+				<td>35-21</td>
+				<td>WF-582X300X12X17</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>7760</td>
+				<td>17.77</td>
+				<td>137.0</td>
+				<td>1062.98</td>
+				<td>1062.98</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B165</td>
+				<td>36-43</td>
+				<td>WF-414X405X18X28</td>
+				<td>1</td>
+				<td>A572-60</td>
+				<td>7760</td>
+				<td>18.39</td>
+				<td>231.9</td>
+				<td>1799.46</td>
+				<td>1799.46</td>
+			</tr>
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B165</td>
+				<td>P1</td>
+				<td>WF-414X405X18X28</td>
+				<td>1</td>
+				<td>A572-60</td>
+				<td>7760</td>
+				<td>18.39</td>
+				<td>231.9</td>
+				<td>1799.46</td>
+				<td>1799.46</td>
+			</tr>
+			
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B175</td>
+				<td>33VB-2</td>
+				<td>WF-414X405X18X28</td>
+				<td>1</td>
+				<td>A572-60</td>
+				<td>9649</td>
+				<td>22.87</td>
+				<td>231.9</td>
+				<td>2237.59</td>
+				<td>2237.59</td>
+			</tr>
+
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B183</td>
+				<td>33B-12</td>
+				<td>WF-500X200X10X16</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>11653</td>
+				<td>20.39</td>
+				<td>89.6</td>
+				<td>1044.66</td>
+				<td>1044.66</td>
+			</tr>
+			
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B198</td>
+				<td>RF-35</td>
+				<td>WF-800X300X14X26</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>11596</td>
+				<td>31.54</td>
+				<td>209.9</td>
+				<td>2434.07</td>
+				<td>2434.07</td>
+			</tr>
+			
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B203</td>
+				<td>35-60</td>
+				<td>WF-500X200X10X16</td>
+				<td>1</td>
+				<td>SM520</td>
+				<td>11946</td>
+				<td>20.91</td>
+				<td>89.6</td>
+				<td>1070.92</td>
+				<td>1070.92</td>
+			</tr>
+			
+			<tr>
+				<td class="text-center">
+					<input type="checkbox">
+				</td>
+				<td>B213</td>
+				<td>35-44</td>
+				<td>BU7-900X300X30X40</td>
+				<td>1</td>
+				<td>A572-60</td>
+				<td>11421</td>
+				<td>51.48</td>
+				<td>574.6</td>
+				<td>6562.94</td>
+				<td>6562.94</td>
+			</tr>
+			</table>
+			<div class="text-center">
+				<input class="btn btn-primary" type="submit" value="Apply" />
+				<input class="btn btn-danger" type="submit" value="Cancel" />
+			</div>
+		</div>
+				
+		
+	</form>
+	</div>
+	</div>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/npm.js"></script>
+</body>
+</html>

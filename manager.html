@@ -3,12 +3,8 @@
 <head>
 
 <title>Project Cost Control</title>
-<script src="js/html5shiv.js"></script>
-<script src="js/html5shiv-printshiv.js"></script>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
-<link rel="stylesheet" href="css/progress-bar.css">
-<link rel="stylesheet" href="css/FSN.css" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1"
 	charset="UTF-8">
@@ -18,245 +14,207 @@
       margin-left: auto;
      }
 	.container {
-		margin-top: 77px;
+		margin-top: 3%;
 		
 	 }
+	
+	
+	*{
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
 
 		body {
-			background-color: rgba(250, 158, 30, 0.6);
-		     }
-			
+			background-color: #FFFFFF;
+		}
+		
+		
 	</style>
 </head>
 <body>
-		<div id="wrapper">
-        <div class="overlay"></div>
-    
-        <!-- Sidebar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-            <ul class="nav sidebar-nav">
-                <li class="sidebar-brand text-center" style="color: white;">
-                       Overview Menu
-                </li>
-                <li>
-                    <a href="#overview">Home</a>
-                </li>
-                <li>
-                    <a href="#engineer">Engineer</a>
-                </li>
-                    <li><a href="#cutting">Cut</a></li>
-                    <li><a href="#fitting">Fit</a></li>
-                    <li><a href="#welding">Weld</a></li>
-                    <li><a href="#painting">Paint</a></li>
-                  </ul>
-                </li>
-            </ul>
-        </nav>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
-                <span class="hamb-top"></span>
-    			<span class="hamb-middle"></span>
-				<span class="hamb-bottom"></span>
-            </button>  
-	                       
-        </div>
-        <!-- /#page-content-wrapper -->
-
-        		
-    </div>
-    <!-- /#wrapper -->
-
-	<div id="wrapper" class="container row-fluid">
-
+	<div class="container">
+		<center><h3>Select Project</h3></center>
+		<center><h6>เลือกโครงการ</h6></center>			
 		<div class="thumbnail">
-			
-			<!--Overview-->
-		<h4 align="center"><a id="overview"><span class="glyphicon glyphicon-link"></span></a>Overview</h4>
-
-	<div class="row"><br />
-		<div class="container-fluid">
-		<div class="col-md-12">
-    	<div class="progress">
-        <div class="one no-color"></div><div class="two no-color"></div><div class="three no-color"></div>
-  			<div class="progress-bar" style="width: 10%;"></div>
+			<br />
+			<form class="col-lg-offset-3 form-inline" method="post" action="#">
+				<div class="col-lg-10 form-group">
+					<label>ชื่องาน </label>
+					<input class="form-control" name="username" type="text" placeholder="" />
+					<label>ประเภท </label>
+					<input class="form-control" name="username" type="text" placeholder="" />
+					<a href="#" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> Search</a>
+				</div>
+			</form>
+			<div>
+				<div><br/></div>
+				<div><br/></div>
+				<div><br/></div>
+				<table class="table table-hover table-bordered table-striped">
+					<thead>
+					    	<tr>
+					        	<th>Project Name</th>
+					        	<th>Project Type</th>
+					        	<th>Date Start</th>
+					        	<th>Date End</th>
+					        	<th>Manager</th>
+					        	<th>Process</th>
+					      	</tr>
+					</thead>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">BTS Green Line</a><span id="iconup" class="glyphicon glyphicon-paperclip hidden"></span></td>
+						<td>Train</td>
+						<td>2006-01-25</td>
+						<td>2010-12-20</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Stay @ Hua Hin</a></td>
+						<td>Home</td>
+						<td>2014-05-22</td>
+						<td>2015-05-01</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">อาคาร ยิมเนเซียมสำหรับเอเชียนเกมส์ ครั้งที่ 13</a></td>
+						<td>Building</td>
+						<td>2001-05-22</td>
+						<td>2003-12-24</td>
+						<td>บรรยงค์</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">โครงสร้างเหล็กสำหรับบอยเลอร์ขนาด2x700 เมกะวัตต์ ของโรงไฟฟ้าราชบุรี</a></td>
+						<td>Factory</td>
+						<td>1998-05-22</td>
+						<td>2003-12-24</td>
+						<td>บรรยงค์</td>
+						<td>100%</td>
+					</tr><tr>
+						<td><a href="manager_preview.html" target="iframe">งานโครงสร้างเหล็กของสถานีรถไฟฟ้าบีทีเอส</a></td>
+						<td>Train</td>
+						<td>1995-05-22</td>
+						<td>2000-12-24</td>
+						<td>เฉลิม</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">งานโครงสร้างเหล็กโรงงานเหล็กรีดเย็นของไทยน๊อกซ์สตีล ระยะที่ 2</a></td>
+						<td>Factory</td>
+						<td>1998-05-22</td>
+						<td>2011-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">โรงงานสระบุรีซีเมนต์</a></td>
+						<td>Factory</td>
+						<td>2011-05-22</td>
+						<td>2015-12-24</td>
+						<td>เฉลิม</td>
+						<td>70%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">งานโครงสร้างเหล็กโรงไฟฟ้าแม่เมาะ หน่วยที่ 12-13</a></td>
+						<td>Factory</td>
+						<td>2001-05-22</td>
+						<td>2005-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">เอ็มไพร์ ทาวเวอร์ </a></td>
+						<td>Building</td>
+						<td>2003-05-22</td>
+						<td>2007-12-24</td>
+						<td>เฉลิม</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">งานโครงสร้างเหล็กสำหรับทางขึ้นลงทางด่วน </a></td>
+						<td>Road</td>
+						<td>2015-05-22</td>
+						<td>2017-12-24</td>
+						<td>จุมพล</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">งานโครงสร้าเหล็กสนามกีฬาเอเชียนเกมส์</a></td>
+						<td>Building</td>
+						<td>1991-05-22</td>
+						<td>1992-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Bangkok Mass Transit System Extension Project (Sukhumvit Line Section 1)</a></td>
+						<td>Train</td>
+						<td>1991-05-22</td>
+						<td>1994-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">สะพานพระรามเก้า</a></td>
+						<td>Bridge</td>
+						<td>1985-05-22</td>
+						<td>1989-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Fabrication Steel Structure for PTT Phenol Plant</a></td>
+						<td>Building</td>
+						<td>2015-05-22</td>
+						<td>2015-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Bangkok Government Complex (Chaengwattana)</a></td>
+						<td>Building</td>
+						<td>2013-05-22</td>
+						<td>2015-12-24</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Suvarnabhumi (Second Bangkok) International Airport Project </a></td>
+						<td>Building</td>
+						<td>2012-05-22</td>
+						<td>2014-12-24</td>
+						<td>จุมพล</td>
+						<td>100%</td>
+					</tr>
+					<tr>
+						<td><a href="manager_preview.html" target="iframe">Delhi Metro, Contract BC</a></td>
+						<td>Train</td>
+						<td>2006-05-5</td>
+						<td>2009-06-5</td>
+						<td>จำเนียร</td>
+						<td>100%</td>
+					</tr>
+				</table>
+			</div>
 		</div>
-        <hr />
 	</div>
-	</div>
-	</div>
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
-			</table>
-		</div>
-	</form><!--end Overview-->
-	
-	<!--Cutting Department-->
-	
-	<h4 align="center"><a id="cutting"><span class="glyphicon glyphicon-link"></span></a>Cutting Department</h4>
-	<div class="row"><br />
-		<div class="container-fluid">
-		<div class="col-md-12">
-		<div class="progress">
-        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-  			<div name="progcut" class="progress-bar progress-bar-success" style="width: 100%"></div>
-		</div>
-        <hr />
-		</div>
-		</div>
-		</div>
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
 
-			</table>
-		</div>
-				
-		
-	</form>	<!--end Cutting Department-->
-	
-	<!--Fitting Department-->
-	
-	<h4 align="center"><a id="fitting"><span class="glyphicon glyphicon-link"></span></a> Fitting Department</h4>
-	<div class="row"><br />
-		<div class="container-fluid">
-		<div class="col-md-12">
-		<div class="progress">
-        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-  			<div name="progcut" class="progress-bar progress-bar-success" style="width: 100%"></div>
-		</div>
-        <hr />
-		</div>
-		</div>
-		</div>
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
-
-			</table>
-		</div>
-				
-		
-	</form>	<!--end Fitting Department-->
-	
-	<!--Welding Department-->
-	
-	<h4 align="center"><a id="welding"><span class="glyphicon glyphicon-link"></span></a> Welding Department</h4>
-	<div class="row"><br />
-		<div class="container-fluid">
-		<div class="col-md-12">
-		<div class="progress">
-        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-  			<div name="progcut" class="progress-bar progress-bar-success" style="width: 100%"></div>
-		</div>
-        <hr />
-		</div>
-		</div>
-		</div>
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
-
-			</table>
-		</div>
-				
-		
-	</form>	<!--end Welding Department-->
-	
-	<!--painting Department-->
-	
-	<h4 align="center"><a id="painting"><span class="glyphicon glyphicon-link"></span></a> Painting Department</h4>
-
-	<div class="row"><br />
-		<div class="container-fluid">
-		<div class="col-md-12">
-		<div class="progress">
-        <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-  			<div name="progcut" class="progress-bar progress-bar-success" style="width: 100%"></div>
-		</div>
-        <hr />
-		</div>
-		</div>
-		</div>
-	<form action="">
-		<div class="table-responsive">
-		<table class="table table-hover table-bordered">
-			<tr>
-				<th class="text-center">Project Name</th>
-				<th class="text-center">Process</th>
-			</tr>
-			<tr>
-				<td><a href="cut_edit.html" target="_blank">Project 1</a></td>
-				<td>20%</td>
-			</tr>
-			<tr>
-				<td>dd</td>
-				<td>42%</td>
-			</tr>
-
-			</table>
-		</div>
-				
-		
-	</form>	<!--end painting Department-->
-	</div>
-	</div>
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/FSN.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow52.js"></script>
-	<script src="js/npm.js"></script>
+<script>
+$(document).ready(function(){
+    $("#iconup").show(function(){
+        $(this).hide();
+    });
+    $("#show").click(function(){
+        $("#iconup").show();
+    });
+});
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/npm.js"></script>
 </body>
 </html>

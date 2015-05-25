@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Project Cost Control</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1"
+	charset="UTF-8">
+	<style>
+	#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+     }
+	.container {
+		margin-top: 3%;
+		
+	 }
+	
+	
+	*{
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+		body {
+			background-color: #FFFFFF;
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<center><h3>Project Name...</h3></center>
+		<center><h6>โครงการ ...</h6></center>			
+		<div id="canvas-holder">
+			<center><canvas id="chart-area" width="300" height="300"/></center>
+		</div>
+		<div>
+			<div><br/></div>
+			<div><br/></div>
+			<div><br/></div>
+			<table class="table table-hover table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Department</th>
+					    <th>Manager</th>
+					    <th>Process</th>
+					</tr>
+				</thead>
+				<tr>
+					<td><a href="manager_cut.html">Cut</a></td>
+					<td>จุมพล</td>
+					<td>40%</td>
+				</tr>
+				<tr>
+					<td><a href="manager_cut.html">Fit</a></td>
+					<td>จุมพล</td>
+					<td>30%</td>
+				</tr>
+				<tr>
+					<td><a href="manager_cut.html">Weld</a></td>
+					<td>จุมพล</td>
+					<td>20%</td>
+				</tr>
+				<tr>
+					<td><a href="manager_cut.html">Paint</a></td>
+					<td>จุมพล</td>
+					<td>10%</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+<script>
+
+		var pieData = [
+				{
+					value: 40,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Cut"
+				},
+				{
+					value: 30,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Fit"
+				},
+				{
+					value: 20,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Weld"
+				},
+				{
+					value: 10,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Paint"
+				}
+
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(pieData);
+			};
+	</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/Chart.js"></script>
+</body>
+</html>
