@@ -88,16 +88,26 @@
                 <li>
                     <a href="home.html" target="iframe">Home</a>
                 </li>
-               <li>
-                    <a href="pcc.html" target="iframe">PCC</a>
-                </li>
-                <li>
-                    <a href="engineering.html" target="iframe">Engineering</a>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">PCC<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">PCC Overview</li>
+                    <li><a href="pcc.html" target="iframe">PCC</a></li>
+                    <li><a href="manager.html" target="iframe">Overview</a></li>
+                  </ul>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Production Department<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engineering<span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Update Status</li>
+                    <li class="dropdown-header">Engineering</li>
+                    <li><a href="engineering.html" target="iframe">Engineering</a></li>
+                    <li><a href="manager.html" target="iframe">Check Status</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Production<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Production</li>
                     <li><a href="cut.html" target="iframe">Cut</a></li>
                     <li><a href="fit.html" target="iframe">Fit</a></li>
                     <li><a href="weld.html" target="iframe">Weld</a></li>
