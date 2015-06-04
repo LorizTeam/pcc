@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project Cost Control</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+
+<style>
+	#wrapper {
+      margin-right: auto;
+      margin-left: auto;
+     }
+	.container {
+		margin-top: 3%;
+		
+	 }
+	
+	
+	*{
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+		body {
+			background-color: #FFFFFF;
+		     }
+		
+	.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<center><h1>Create Project Part</h1></center>
+		<div class="thumbnail">
+			<div><br /></div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-2" align="right"><label>Project Name:</label></div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="Project Name" /></div>
+			</div>
+			<div><br /></div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-2" align="right"><label>Project Type:</label></div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="Project Type" /></div>
+			</div>
+			<div><br /></div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-2"><a href="engineering_upload.html" class="btn btn-info">Create Project Part</a></div>
+			</div>
+			<div><br /></div>
+		</div>
+	</div>
+	
+	<script src="js/bootstrap.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+	$(function() {
+   		$( "#datepicker" ).datepicker();
+   		$( "#datepicker1" ).datepicker();
+  	});
+	</script>
+</body>
+</html>
